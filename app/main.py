@@ -33,13 +33,13 @@ def startup():
         conn.commit()
 
 
-@app.get("/")
+app.get("/")
 def home():
     return {
-        "project": "Mike Docker Lab",
+        "project": "Mike Docker DevOps Lab",
+        "version": "v2",
         "status": "running"
     }
-
 
 @app.get("/health")
 def health():
